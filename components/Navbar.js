@@ -1,3 +1,11 @@
+import React from 'react'
+import {BsSearch, } from 'react-icons/bs'
+import { ImWarning } from "react-icons/im";
+import {FaBars} from "react-icons/fa"
+
+
+
+
 const Navbar = () => {
     return ( <div className="flex flex-col justify-center">
                 <nav className="flex  items-center text-center w-full justify-between  h-[50px] p-5">
@@ -9,9 +17,9 @@ const Navbar = () => {
                         <li className="">Submit article</li>
                         
                     </ul>
-                    <div className="md:hidden">nav icon</div>
-                    <div className="md:hidden">Search icon</div>
-                    <div className="hidden md:block"><input type="text" placeholder="search"/></div>
+                    <div className="md:hidden"><FaBars size={30}/></div>
+                    <div className="md:hidden"><BsSearch size={30}/></div>
+                    <div className="hidden md:flex gap-5"><input className='bg-gray-200 ' type="text" placeholder="search"/><div className='bg-blue-500  w-10 flex justify-center items-center p-2'><BsSearch  size={20}/></div></div>
                 </nav>
 
                 <nav className="flex flex-col items-center justify-center p-5 h-[120px] bg-red-500 text-white ">
