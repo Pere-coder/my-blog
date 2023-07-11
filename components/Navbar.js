@@ -19,7 +19,7 @@ const Navbar = () => {
                     </ul>
                     <div className="md:hidden"><FaBars size={30}/></div>
                     <div className="md:hidden"><BsSearch size={30}/></div>
-                    <div className="hidden md:flex gap-2 bg-gray-200 w-[200px] h-[30px] p-2 justify-start items-center rounded-xl"><input type='text' className='w-[150px] bg-gray-200' /><BsSearch  size={20}/></div>
+                    <div className="hidden md:flex gap-2 bg-gray-200 w-[200px] h-[30px] p-2 justify-start items-center rounded-xl"><input type='text' className=' w-[150px] bg-gray-200' /><BsSearch  size={20}/></div>
                 </nav>
 
                 <nav className="flex flex-col items-center justify-center p-5 h-[120px] bg-red-500 text-white ">
