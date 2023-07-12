@@ -1,6 +1,14 @@
+"use client"
+import { useState } from 'react' 
+import React from 'react';
+
+
+
 const weather = () => {
-    return ( <div className="bg-black w-[500px] h-[300px] mt-10 flex justify-start ml-5">
-    
+    return ( <div className=" mt-10 flex flex-wrap justify-center  gap-10">
+                <div className='bg-black w-[400px] h-[300px]'></div>
+                <div className='bg-red-500 w-[400px] h-[300px]'></div>
+                <div className='bg-red-500 w-[400px] h-[300px]'></div>
             </div> );
 }
  
