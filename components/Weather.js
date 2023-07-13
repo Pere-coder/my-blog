@@ -26,17 +26,16 @@ const weather = () => {
 //     fetchweather();
 //   }, []);
 // console.log(weather)
-const humid = weather.main
-const weath = weather.weather
+
 const list = Object.values(weather)
 const third = list[3]
 
-// console.log(humid)
+
 console.log(third)
     return ( <div className=" mt-10 flex flex-wrap justify-center  gap-10">
                 
                 <p className='bg-black w-[400px] h-[300px] text-white'>
-                {weather.name}{weather.timezone}{third}
+                {weather.name}{weather.timezone}
                     <button onClick={fetchweather} className='bg-green-500 w-[100px] h-[50px]'>click</button>
                 </p>
                 

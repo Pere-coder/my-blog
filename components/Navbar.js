@@ -41,7 +41,7 @@ const klick = () => {
                     <div className="flex gap-2 bg-gray-200 w-[200px] h-[30px] p-2 justify-start items-center rounded-xl"><input  type='text' className='appearance-none border-none outline-none w-[150px] bg-gray-200' /><BsSearch className='cursor-pointer'  size={20}/></div>
                 </nav>
 
-                <nav className="flex flex-col items-center justify-center p-5 h-[120px] bg-red-500 text-white ">
+                <nav className="flex flex-col items-center justify-center p-5 h-[120px] bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 text-white ">
                     <div className="flex w-full justify-between">
                         <h1 className="text-[40px]  md:text-[40px]">Blogs/News</h1>
                         <div className="flex justify-center items-center md:hidden"><FaBars size={30}/></div>
