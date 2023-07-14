@@ -57,7 +57,7 @@ const klick = () => {
                 <nav className="flex flex-col items-center justify-center p-5 h-[120px] bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 text-white ">
                     <div className="flex w-full justify-between">
                         <h1 className="text-[40px]  md:text-[40px]">Blogs/News</h1>
-                        <div className="flex justify-center items-center md:hidden " onClick={btn}><FaBars size={30}/></div>
+                        <div className="flex justify-center items-center cursor-pointer md:hidden " onClick={btn}><FaBars size={30}/></div>
                     </div>
                     <ul className="hidden  md:flex items-start justify-center mx-auto gap-10 mt-5">
                         <li className="border-r-2 border-white w-[150px] cursor-pointer" onClick={(e) => {e.preventDefault(); setIsOpen(false)}}>Home</li>
@@ -172,7 +172,7 @@ const klick = () => {
                             <button
                             type="button"
                             className="rounded-md text-gray-300 hover:text-white focus:outline-none focus:ring-2 focus:ring-white"
-                            onClick={() => setOpen(false)}
+                            onClick={() => setOp(false)}
                             >
                             <span className="sr-only">Close panel</span>
                             <XMarkIcon className="h-6 w-6" aria-hidden="true" />
@@ -185,20 +185,18 @@ const klick = () => {
                         </div>
                         <div className="relative mt-6 flex-1 px-4 sm:px-6  ">
                             <ul className="flex flex-col gap-10 justify-center items-center ">
-                            <div className='flex'><div className="text-[#0479CE] font-700  text-[40px] leading-28 font-poppins ">HISC </div><div className="text-[6px] leading-[9px] mt-0 w-[50px] md:hidden text-[#1F1F1F]">Heartfulness International <br/>  Sports Center</div></div>
+                            <div className=" text-[50px]">Gixblog </div>
 
-                            <div className=" mt-20 font-roboto font-500 text-26 leading-80 flex flex-col justify-center items-center text-center">
+                            <div className="flex flex-col justify-center items-center gap-10 mt-20 ">
                                 <Link href='' className="cursor-pointer">Home</Link>
-                                <Link href='' >About Us</Link>
-                                <Link href="" className="cursor-pointer">Facility</Link>
+                                <Link href='' className="cursor-pointer">Breaking news</Link>
+                                <Link href="" className="cursor-pointer">Categories</Link>
+                                <Link href="" className="cursor-pointer">Who we are</Link>
+                                <Link href="" className="cursor-pointer">Submit an article</Link>
                             </div>
                                 
 
-                            <li className="bg-[#0479CE]  text-white text-center flex items-center justify-center  text-13.85 font-500 font-roboto leading-16.23 rounded-3xl w-175 h-52  mt-[65px]">
-                            SIGN UP NOW
-                            
-                        </li>
-                        
+                          
                             
                             </ul>
                             
