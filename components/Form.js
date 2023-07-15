@@ -49,7 +49,7 @@ const Form = () => {
           Blog/Article Post
         </h1>
         <p class="text-gray-400 dark:text-gray-400">
-          write an article.
+          Submit an article.
         </p>
       </div>
       <div class="m-7">

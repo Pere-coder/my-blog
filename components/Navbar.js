@@ -60,7 +60,7 @@ const klick = () => {
                         <div className="flex justify-center items-center cursor-pointer md:hidden " onClick={btn}><FaBars size={30}/></div>
                     </div>
                     <ul className="hidden  md:flex items-start justify-center mx-auto gap-10 mt-5">
-                        <li className="border-r-2 border-white w-[150px] cursor-pointer" onClick={(e) => {e.preventDefault(); setIsOpen(false)}}>Home</li>
+                        <li className="border-r-2 border-white w-[150px] cursor-pointer" onClick={(e) => {e.preventDefault(); setIsOpen(false)}}><Link href='/'>Home</Link></li>
                         <li className="border-r-2 border-white w-[150px] cursor-pointer" onClick={(e) => {e.preventDefault(); setIsOpen(false)}}>Breaking news</li>
                         <div>
                             <li className="border-r-2 border-white w-[150px] cursor-pointer ml-12"  onClick={toggleDropdown}>Categories</li>
@@ -103,8 +103,8 @@ const klick = () => {
                                 <ul className="absolute mx-0 flex flex-col justify-center w-[170px] mt-2  bg-white border  shadow-lg text-sm">
                                 
                                     <li>
-                                        <a href="#" onClick={(e) => {e.preventDefault(); setOpen(false)}} className="flex justify-center text-gray-800 hover:bg-gray-200">
-                                        About Us</a>
+                                        <Link href="about"  className="flex justify-center text-gray-800 hover:bg-gray-200">
+                                        About Us</Link>
                                     </li>
                                     <li>
                                         <a href="#"  onClick={(e) => {e.preventDefault(); setOpen(false)}} className="flex justify-center text-gray-800 hover:bg-gray-200">
@@ -122,7 +122,7 @@ const klick = () => {
                                 </ul> )}
 
                         </div>
-                        <li className="border-r-2 border-white w-[150px] cursor-pointer" onClick={(e) => {e.preventDefault(); setIsOpen(false)}}>Submit your article</li>
+                        <li className="border-r-2 border-white w-[150px] cursor-pointer" onClick={(e) => {e.preventDefault(); setIsOpen(false)}}><Link href='submit'>Submit your article</Link></li>
                         <li className="border-r-2 border-white w-[150px] cursor-pointer" onClick={(e) => {e.preventDefault(); setIsOpen(false)}}>Follow us</li>
                     </ul>
 
@@ -188,11 +188,11 @@ const klick = () => {
                             <div className=" text-[50px]">Gixblog </div>
 
                             <div className="flex flex-col justify-center items-center gap-10 mt-20 ">
-                                <Link href='' className="cursor-pointer">Home</Link>
+                                <Link href='/' className="cursor-pointer">Home</Link>
                                 <Link href='' className="cursor-pointer">Breaking news</Link>
                                 <Link href="" className="cursor-pointer">Categories</Link>
-                                <Link href="" className="cursor-pointer">Who we are</Link>
-                                <Link href="" className="cursor-pointer">Submit an article</Link>
+                                <Link href="about" className="cursor-pointer">Who we are</Link>
+                                <Link href="submit" className="cursor-pointer">Submit an article</Link>
                             </div>
                                 
 
