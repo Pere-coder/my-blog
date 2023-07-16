@@ -11,7 +11,7 @@ export default function Home() {
       <div>
         
       <Navbar/>
-      <Weather/>
+      {/* <Weather/> */}
       <Blog/>
       <Footer/>
       </div>

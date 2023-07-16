@@ -1,34 +1,34 @@
-// "use client"
-// import React, { useState, useEffect } from 'react';
-// import axios from 'axios'
-// import Image from 'next/image'
+"use client"
+import React, { useState, useEffect } from 'react';
+import axios from 'axios'
+import Image from 'next/image'
 
 
 
 const Weather = () => {
-//     const [weather, setWeather] = useState({});
-//     const [error, setError] = useState(null);
+    const [weather, setWeather] = useState({});
+    const [error, setError] = useState(null);
 
-//     const url = `https://api.openweathermap.org/data/2.5/weather?q=Lagos&units=imperial&appid=${process.env.NEXT_PUBLIC_WEATHER_KEY}`;
+    const url = `https://api.openweathermap.org/data/2.5/weather?q=Lagos&units=imperial&appid=${process.env.NEXT_PUBLIC_WEATHER_KEY}`;
 
-//     const fetchweather = () => {
-//         axios.get(url).then((res) => {
-//             setWeather(res.data);
-//             setError(null)
-//         })
-//         .catch((error) => {
-//             setError('An error occured while fecthing weather!')
-//             setWeather({})
+    const fetchweather = () => {
+        axios.get(url).then((res) => {
+            setWeather(res.data);
+            setError(null)
+        })
+        .catch((error) => {
+            setError('An error occured while fecthing weather!')
+            setWeather({})
             
-//         })
-//  };
-// //  useEffect(() => {
-// //     fetchweather();
-// //   }, []);
-// // console.log(weather)
+        })
+ };
+//  useEffect(() => {
+//     fetchweather();
+//   }, []);
+// console.log(weather)
 
-// const list = Object.values(weather)
-// const third = list[3]
+const list = Object.values(weather)
+const third = list[3]
 
 
 console.log(third)
