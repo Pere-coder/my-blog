@@ -5,7 +5,7 @@ import Image from 'next/image'
 
 
 
-const weather = () => {
+const Weather = () => {
     const [weather, setWeather] = useState({});
     const [error, setError] = useState(null);
 
@@ -42,4 +42,4 @@ console.log(third)
             </div> );
 }
  
-export default weather;
+export default Weather;
