@@ -79,6 +79,11 @@ const Form = () => {
             </div>
           </div>
           <div class="mb-6">
+            <label for="message" class="block mb-2 text-sm text-gray-600 dark:text-gray-400">Blog/Article title</label>
+            <input onChange={handleChange} type="text" name="blogtitle" id="phone" placeholder="blog'article title" required class="w-full px-3 py-2 placeholder-gray-300 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300 dark:bg-gray-700 dark:text-white dark:placeholder-gray-500 dark:border-gray-600 dark:focus:ring-gray-900 dark:focus:border-gray-500" />
+          
+          </div>
+          <div class="mb-6">
             <label for="message" class="block mb-2 text-sm text-gray-600 dark:text-gray-400">Your Blog/Article</label>
 
             <textarea onChange={handleChange} rows="5" name="blog" id="message" placeholder="Your Blog/article" required class="w-full px-3 py-2 placeholder-gray-300 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300 dark:bg-gray-700 dark:text-white dark:placeholder-gray-500 dark:border-gray-600 dark:focus:ring-gray-900 dark:focus:border-gray-500" ></textarea>
