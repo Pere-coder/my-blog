@@ -6,7 +6,7 @@ const about = () => {
 
                 <Navbar/>
                 <div className="mr-20 ml-20">
-                <div className="flex flex-col justify-center items-center text-center mt-20 bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 text-white p-5 rounded-xl leading-[30px]">
+                <div className="flex flex-col justify-center items-center text-center mt-20 border border-gray-300 rounded-md p-5 text-black leading-[30px]">
                     <h1 className="text-[40px] ">About Us</h1>
                 <p className="mt-5">Venworld Global is a renowned software engineering and media solutions company thriving to take your business setups to the next development phase!
 

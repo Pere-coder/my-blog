@@ -51,7 +51,7 @@ const klick = () => {
                     <ul className="hidden md:flex text-center justify-center gap-5 font-[500px]">
                         <h1>Your one stop news and blog platform.....</h1>  
                     </ul>
-                    <div className="flex gap-2 bg-gray-200 w-[200px] h-[30px] p-2 justify-start items-center rounded-xl"><input  type='text' className='appearance-none border-none outline-none w-[150px] bg-gray-200' /><BsSearch className='cursor-pointer'  size={20}/></div>
+                    <div className="flex gap-2 p-2 justify-start items-center"><input  type='text' className=' w-[200px] bg-white  placeholder-gray-300 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300' /><BsSearch className='cursor-pointer'  size={20}/></div>
                 </nav>
 
                 <nav className="flex flex-col items-center justify-center p-5 h-[120px] bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 text-white ">
