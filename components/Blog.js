@@ -1,6 +1,7 @@
 "use client"
 import axios from "axios";
 import { useState, useEffect } from "react";
+import Link from "next/link";
 
 const blog = () => {
 
@@ -30,7 +31,7 @@ const blog = () => {
         <span className="mt-5">By - {blog.firstname} {blog.date}</span>
         <hr className="mt-3"/>
         <p className="mt-7 p-5">{blog.blog}</p>
-        <h1 className=" bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 text-white p-2 rounded-md w-[200px] mx-auto mb-5">Read more</h1>
+        <Link href={`/read/${blog.id}`}><h1 className=" bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 text-white p-2 rounded-md w-[200px] mx-auto mb-5">Read more</h1></Link>
         </div>
         </div>
         ))} </div>
