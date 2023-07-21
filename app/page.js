@@ -1,7 +1,6 @@
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
 import Blog from '@/components/Blog'
-import Weather from '@/components/Weather'
 import Image from 'next/image'
 
 export default function Home() {
@@ -11,7 +10,6 @@ export default function Home() {
       <div>
         
       <Navbar/>
-      {/* <Weather/> */}
       <Blog/>
       <Footer/>
       </div>
