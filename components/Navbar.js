@@ -60,12 +60,12 @@ const klick = () => {
                         <div className="flex justify-center items-center cursor-pointer md:hidden " onClick={btn}><FaBars size={30}/></div>
                     </div>
                     <ul className="hidden  md:flex items-start justify-center mx-auto gap-4 mt-5">
-                        <li className="border-l-2 flex justify-center mx-auto border-white w-[80px] cursor-pointer" onClick={(e) => {e.preventDefault(); setIsOpen(false)}}><Link href='/'>Home</Link></li>
+                        <li className=" flex justify-center mx-auto p-2 cursor-pointer hover:border-r-2 hover:border-l-2 border-white" onClick={(e) => {e.preventDefault(); setIsOpen(false)}}><Link href='/'>Home</Link></li>
     
                         <div>
-                            <li className="border-l-2 flex justify-center items-center text-center border-white w-[100px] cursor-pointer mx-auto"  onClick={toggleDropdown}>Categories</li>
+                            <li className="flex justify-center items-center text-center p-2 cursor-pointer mx-auto hover:border-r-2 hover:border-l-2 border-white"  onClick={toggleDropdown}>Categories</li>
                             {isOpen && (
-                                <ul className="absolute mx-0 flex flex-col justify-center w-[120px] mt-2  bg-white border  shadow-lg text-sm">
+                                <ul className="absolute mx-0 flex flex-col justify-center w-[120px] mt-2  bg-white   shadow-lg text-sm">
                                 
                                     <li>
                                         <a href="#" onClick={(e) => {e.preventDefault(); setIsOpen(false)}} className="flex justify-center text-gray-800 hover:bg-gray-200">
@@ -98,7 +98,7 @@ const klick = () => {
                                 </ul> )}
                          </div>
                         <div>
-                            <li className="border-l-2 flex justify-center border-white w-[100px] cursor-pointer" onClick={tDropdown}>Who we are</li>
+                            <li className="flex justify-center p-2 cursor-pointer hover:border-r-2 hover:border-l-2 border-white" onClick={tDropdown}>Who we are</li>
                             {Open && (
                                 <ul className="absolute mx-0 flex flex-col justify-center w-[100px] mt-2  bg-white border  shadow-lg text-sm">
                                 
@@ -122,8 +122,8 @@ const klick = () => {
                                 </ul> )}
 
                         </div>
-                        <li className="border-l-2 flex justify-center border-white w-[150px] cursor-pointer" onClick={(e) => {e.preventDefault(); setIsOpen(false)}}><Link href='/submit'>Submit your article</Link></li>
-                        <li className="border-r-2 border-l-2 flex justify-center border-white w-[100px] cursor-pointer" onClick={(e) => {e.preventDefault(); setIsOpen(false)}}>Follow us</li>
+                        <li className="flex justify-center p-2 cursor-pointer hover:border-r-2 hover:border-l-2 border-white" onClick={(e) => {e.preventDefault(); setIsOpen(false)}}><Link href='/submit'>Submit your article</Link></li>
+                        <li className=" flex justify-center p-2  cursor-pointer hover:border-r-2 hover:border-l-2 border-white" onClick={(e) => {e.preventDefault(); setIsOpen(false)}}>Follow us</li>
                     </ul>
 
                     
@@ -191,8 +191,8 @@ const klick = () => {
                                 <Link href='/' className="cursor-pointer">Home</Link>
                                 <Link href='' className="cursor-pointer">Breaking news</Link>
                                 <Link href="" className="cursor-pointer">Categories</Link>
-                                <Link href="about" className="cursor-pointer">Who we are</Link>
-                                <Link href="submit" className="cursor-pointer">Submit an article</Link>
+                                <Link href="/about" className="cursor-pointer">Who we are</Link>
+                                <Link href="/submit" className="cursor-pointer">Submit an article</Link>
                             </div>
                                 
 
