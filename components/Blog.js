@@ -3,7 +3,7 @@ import axios from "axios";
 import { useState, useEffect } from "react";
 import Link from "next/link";
 
-const blog = () => {
+const Blog = () => {
 
     const [data, setData] = useState([])
 
@@ -51,4 +51,4 @@ const blog = () => {
      </div>);
 }
  
-export default blog;
+export default Blog;
