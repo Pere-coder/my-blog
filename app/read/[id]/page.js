@@ -5,7 +5,7 @@ import axios from "axios";
 import { useState, useEffect } from "react";
 import { useParams } from 'next/navigation'
 
-const blogdetail = () => {
+const Blogdetail = () => {
 
     const {id} = useParams()
     const [data, setData] = useState(null)
@@ -41,4 +41,4 @@ const blogdetail = () => {
         </div>);
 }
  
-export default blogdetail;
+export default Blogdetail;
