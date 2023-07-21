@@ -65,7 +65,7 @@ const klick = () => {
                         <div>
                             <li className="flex justify-center items-center text-center p-2 cursor-pointer mx-auto hover:border-r-2 hover:border-l-2 border-white"  onClick={toggleDropdown}>Categories</li>
                             {isOpen && (
-                                <ul className="absolute mx-0 flex flex-col justify-center w-[120px] mt-2  bg-white   shadow-lg text-sm">
+                                <ul className="absolute mx-0 flex flex-col justify-center w-[120px]  bg-white   shadow-lg text-sm">
                                 
                                     <li>
                                         <a href="#" onClick={(e) => {e.preventDefault(); setIsOpen(false)}} className="flex justify-center text-gray-800 hover:bg-gray-200">
@@ -100,7 +100,7 @@ const klick = () => {
                         <div>
                             <li className="flex justify-center p-2 cursor-pointer hover:border-r-2 hover:border-l-2 border-white" onClick={tDropdown}>Who we are</li>
                             {Open && (
-                                <ul className="absolute mx-0 flex flex-col justify-center w-[100px] mt-2  bg-white border  shadow-lg text-sm">
+                                <ul className="absolute mx-0 flex flex-col justify-center w-[100px]  bg-white border  shadow-lg text-sm">
                                 
                                     <li>
                                         <Link href="/about"  className="flex justify-center text-gray-800 hover:bg-gray-200">
