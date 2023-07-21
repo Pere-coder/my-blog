@@ -10,6 +10,8 @@ const blogdetail = () => {
     const {id} = useParams()
     const [data, setData] = useState(null)
 
+    
+
 
     useEffect (() => {
         axios.get(`http://127.0.0.1:8000/blog/${id}`)

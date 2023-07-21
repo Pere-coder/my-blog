@@ -7,6 +7,10 @@ const blog = () => {
 
     const [data, setData] = useState([])
 
+    function truncateText(text, maxLength) {
+        return text.length > maxLength ? text.substring(0, maxLength) + '...' : text;
+      }
+
 
     const fetchData = () => {
         // event.preventDefault()
@@ -30,7 +34,7 @@ const blog = () => {
         <div><h1 className="text-xl mt-5">{blog.blogtitle}</h1>
         <span className="mt-5">By - {blog.firstname} {blog.date}</span>
         <hr className="mt-3"/>
-        <p className="mt-7 p-5">{blog.blog}</p>
+        <p className="mt-7 p-5">{truncateText(blog.blog, 150)}</p>
         <Link href={`/read/${blog.id}`}><h1 className=" bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 text-white p-2 rounded-md w-[200px] mx-auto mb-5">Read more</h1></Link>
         </div>
         </div>
