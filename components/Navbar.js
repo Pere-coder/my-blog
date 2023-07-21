@@ -103,7 +103,7 @@ const klick = () => {
                                 <ul className="absolute mx-0 flex flex-col justify-center w-[100px] mt-2  bg-white border  shadow-lg text-sm">
                                 
                                     <li>
-                                        <Link href="about"  className="flex justify-center text-gray-800 hover:bg-gray-200">
+                                        <Link href="/about"  className="flex justify-center text-gray-800 hover:bg-gray-200">
                                         About Us</Link>
                                     </li>
                                     <li>
@@ -122,7 +122,7 @@ const klick = () => {
                                 </ul> )}
 
                         </div>
-                        <li className="border-l-2 flex justify-center border-white w-[150px] cursor-pointer" onClick={(e) => {e.preventDefault(); setIsOpen(false)}}><Link href='submit'>Submit your article</Link></li>
+                        <li className="border-l-2 flex justify-center border-white w-[150px] cursor-pointer" onClick={(e) => {e.preventDefault(); setIsOpen(false)}}><Link href='/submit'>Submit your article</Link></li>
                         <li className="border-r-2 border-l-2 flex justify-center border-white w-[100px] cursor-pointer" onClick={(e) => {e.preventDefault(); setIsOpen(false)}}>Follow us</li>
                     </ul>
 

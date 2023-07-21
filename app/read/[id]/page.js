@@ -28,7 +28,7 @@ const blogdetail = () => {
         <div>
         <Navbar/>
         <div className="flex flex-col justify-center items-center mt-10">
-            <div className="border border-gray-300 w-[300px]  md:w-[900px] text-black justify-center items-center text-center rounded-md">
+            <div className="border border-gray-300 w-[300px]  md:w-[700px] lg:w-[900px] text-black justify-center items-center text-center rounded-md">
             <h1 className="text-xl mt-5">{data.blogtitle}</h1>
             <span className="mt-5">By - {data.firstname} {data.date}</span>
             <hr className="mt-3"/>

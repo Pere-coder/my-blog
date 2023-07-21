@@ -30,7 +30,7 @@ const blog = () => {
     
        {data.length > 0 ? (<div className="flex flex-wrap justify-center mt-10 gap-2">
         {data.map(blog => (
-        <div className="border border-gray-300 w-[300px]  text-black justify-center items-center text-center rounded-md">
+        <div className="border border-gray-300 w-[300px] md:w-[400px] text-black justify-center items-center text-center rounded-md">
         <div><h1 className="text-xl mt-5">{blog.blogtitle}</h1>
         <span className="mt-5">By - {blog.firstname} {blog.date}</span>
         <hr className="mt-3"/>
