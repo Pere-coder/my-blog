@@ -4,10 +4,9 @@ import Footer from "@/components/Footer";
 
 const submit = () => {
     return ( <>
-    
-            <Navbar/>
-            <Form/>
-            <Footer/>
+                <Navbar/>
+                <Form/>
+                <Footer/>
             </> );
 }
  

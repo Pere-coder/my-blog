@@ -18,26 +18,26 @@ const Blogdetail = () => {
         .then(response => {console.log(response.data)
             setData(response.data)})
         .catch(error => {console.log('Error', error)})   
-    }, [id]);
+        }, [id]);
    
 
     if (!data) {
         return <div> <Navbar/><div className="flex justify-center items-center mt-10">Loading...</div><Footer/></div>;
       }
+
     return ( 
         <div>
-        <Navbar/>
-        <div className="flex flex-col justify-center items-center mt-10">
-            <div className="border border-gray-300 w-[300px]  md:w-[700px] lg:w-[900px] text-black justify-center items-center text-center rounded-md">
-            <h1 className="text-xl mt-5">{data.blogtitle}</h1>
-            <span className="mt-5">By - {data.firstname} {data.date}</span>
-            <hr className="mt-3"/>
-            <p className="mt-7 p-5">{data.blog}</p>
+            <Navbar/>
+            <div className="flex flex-col justify-center items-center mt-10">
+                <div className="border border-gray-300 w-[300px]  md:w-[700px] lg:w-[900px] text-black justify-center items-center text-center rounded-md">
+                    <h1 className="text-xl mt-5">{data.blogtitle}</h1>
+                    <span className="mt-5">By - {data.firstname} {data.lastname}   {data.date}</span>
+                    <hr className="mt-3"/>
+                    <p className="mt-7 p-5">{data.blog}</p>
+                </div>
 
             </div>
-
-        </div>
-        <Footer/>
+            <Footer/>
         </div>);
 }
  

@@ -19,14 +19,12 @@ const Form = () => {
         event.preventDefault();
         axios.post('http://127.0.0.1:8000/blog/', formData)
         .then(response => {
-    // Handle the response
         console.log(response.data);
         setSuccessMessage('your Blog/Article has been succesfully submitted')
         setFormData({'formData': null})
   })
 
   .catch(error => {
-    // Handle any errors
     console.error('Error:', error);
     setSuccessMessage('An error has occured, please fill all fields')
     setFormData({'formData': null})
