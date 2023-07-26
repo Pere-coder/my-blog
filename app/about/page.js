@@ -2,10 +2,10 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
 const about = () => {
-    return ( <>
+    return ( <div className="bg-gray-100">
 
                 <Navbar/>
-                <div className="mr-20 ml-20">
+                <div className="mr-20 ml-20 ">
                     <div className="flex flex-col justify-center items-center text-center mt-20 border border-gray-300 rounded-md p-5 text-black leading-[30px]">
                     <h1 className="text-[40px] ">About Us</h1>
                         <p className="mt-5">Venworld Global is a renowned software engineering and media solutions company thriving to take your business setups to the next development phase!
@@ -21,7 +21,7 @@ const about = () => {
                     </div>
                 </div>
                 <Footer/>
-            </> );
+            </div> );
 }
  
 export default about;

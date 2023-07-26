@@ -57,6 +57,7 @@
 import axios from "axios";
 import { useState, useEffect } from "react";
 import Link from "next/link";
+import News from "./News";
 
 const Blog = () => {
   const [data, setData] = useState([]);
@@ -92,7 +93,9 @@ const Blog = () => {
   };
 
   return (
-    <div className="flex flex-col justify-center items-center">
+    <div className="flex flex-wrap gap-10 justify-center">
+    <div>
+    <div className="flex flex-col justify-center items-center bg-white mt-10 rounded-md p-5">
       <div className="flex justify-center items-center mt-10 text-[40px]">
         Blogs & Articles
       </div>
@@ -105,34 +108,33 @@ const Blog = () => {
       />
 
       {data.length > 0 ? (
-        <div className="flex flex-wrap justify-center mt-10 gap-2">
+        <div className="flex flex-wrap justify-center mt-10 md:w-[720px] gap-4 ">
           {data.map((blog) => (
+            <Link  href={`/read/${blog.id}`}  className="cursor-pointer">
             <div
               key={blog.id}
-              className="border border-gray-300 w-[300px] md:w-[400px] text-black justify-center items-center text-center rounded-md"
+              className="shadow-xl hover:scale-105 ease-in-out duration-300  bg-[url('../public/p.jpg')]  bg-no-repeat bg-cover h-[200px] md:h-[300px] w-[300px] md:w-[300px] text-white  items-start text-start rounded-md"
             >
-              <div>
-                <h1 className="text-xl mt-5">{blog.blogtitle}</h1>
-                <span className="mt-5">
-                  By - {blog.firstname} {blog.date}
+              <div className="flex flex-col p-5"> <h1 className="flex mt-20  text-[15px] md:text-[25px] ">{blog.blogtitle}</h1>
+                <span className=" text-[5px] md:text-[10px] text-gray-100 mt-2">
+                  By - <span className="bg-blue-500 p-2 rounded-md">{blog.firstname}</span> {blog.date}
                 </span>
-                <hr className="mt-3" />
-                <p className="mt-7 p-5">{truncateText(blog.blog, 150)}</p>
-                <Link href={`/read/${blog.id}`}>
-                  <h1 className=" bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 text-white p-2 rounded-md w-[200px] mx-auto mb-5">
-                    Read more
-                  </h1>
-                </Link>
-              </div>
             </div>
+               
+           
+            </div>
+            </Link>
           ))}
         </div>
       ) : (
-        <div className="border border-gray-300 w-[500px] h-[400px] text-black text-[40px] justify-center items-center text-center mt-10 rounded-md">
+        <div className="border border-gray-300 w-[300px] md:w-[400px] h-[400px] text-black  justify-center items-center text-center mt-10 rounded-md">
           No blogs posted
         </div>
       )}
     </div>
+    </div>
+    <News/>
+   </div>
   );
 };
 

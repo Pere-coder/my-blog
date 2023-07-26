@@ -3,10 +3,11 @@ import Footer from '@/components/Footer'
 import Blog from '@/components/Blog'
 import Image from 'next/image'
 
+
 export default function Home() {
   
   return (
-    <main className="min-h-screen">
+    <main className="min-h-screen bg-gray-100">
       <div>
         <Navbar/>
         <Blog/>
