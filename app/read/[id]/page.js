@@ -30,10 +30,13 @@ const Blogdetail = () => {
             <Navbar/>
             <div className="flex flex-col justify-center items-center mt-10">
                 <div className="bg-white w-[300px]  md:w-[700px] lg:w-[900px] text-black justify-center items-center text-center rounded-md">
-                    <h1 className="text-xl mt-5">{data.blogtitle}</h1>
+                    <h1 className="text-[50px] font-[400px] mt-5">{data.blogtitle}</h1>
                     <span className="mt-5">By - {data.firstname} {data.lastname}   {data.date}</span>
                     <hr className="mt-3"/>
-                    <p className="mt-7 p-5">{data.blog}</p>
+                    <div className="w-[200px] h-[100px] md:w-[600px] md:h-[400px] mx-auto flex items-center justify-center mt-10 bg-no-repeat bg-cover" style={{
+                         backgroundImage: `url(${data.image})`,
+                    }}></div>
+                    <p className="mt-7 text-[10px] md:text-[20px] p-5 ">{data.blog}</p>
                 </div>
 
             </div>
