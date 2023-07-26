@@ -1,4 +1,23 @@
+"use client"
+import React, { useState, useEffect } from 'react';
+import axios from 'axios';
+
+
 const News = () => {
+    const [data, dataUpdate] = useState([])
+
+
+    const fetch = () => [
+        axios.get('http://127.0.0.1:8000/news/')
+        .then((response) =>  {(response.json)
+        dataUpdate(response.data)})
+        .catch((err) => {
+            console.log('Error', err)
+        })
+
+
+    ]
+
 
 
 
@@ -6,6 +25,7 @@ const News = () => {
         
         <div className="bg-white mt-10 rounded-md">
         <div className='text-black flex flex-col   md:w-[300px] text-center mt-10 text-[20px] '>
+            
             <h1>Breaking News</h1>
             <div className="p-5 ">
             <h1 className="text-[20px]">Babangida ate the meat</h1>
