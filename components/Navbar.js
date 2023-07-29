@@ -1,5 +1,4 @@
 "use client"
-import React from 'react'
 import {BsSearch, } from 'react-icons/bs'
 import React from "react";
 import { ImWarning } from "react-icons/im";
