@@ -1,6 +1,7 @@
 "use client"
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
+import Document, { Html, Head, Main, NextScript } from 'next/document';
 
 
 const Email = () => {
@@ -30,8 +31,11 @@ const Email = () => {
   
 
 
-    return ( <>
-
+    return ( 
+    <>
+        <Head>
+          <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests" />
+        </Head> 
         <form className="flex flex-col justify-center items-center" method='POST'>
         {successMessage && <div className='flex mt-5 justify-center items-center text-green-500'>{successMessage}</div>}
             <div className="mt-5 text-white flex justify-center text-center text-[15px] md:text-[30px]">Suscribe to our news letter</div>

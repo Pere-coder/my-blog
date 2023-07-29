@@ -3,6 +3,7 @@ import axios from "axios";
 import Cpost from '@/components/Cpost'
 import { useState, useEffect } from "react";
 import { useParams } from 'next/navigation'
+import Document, { Html, Head, Main, NextScript } from 'next/document';
 
 
 const Comment = () => {
@@ -31,6 +32,9 @@ const Comment = () => {
     return ( 
     
         <>
+        <Head>
+          <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests" />
+        </Head>
          <hr className="mt-3"/>
                     <div className="flex flex-col ">
                         <Cpost/>

@@ -1,12 +1,17 @@
 import React from "react";
 import Image from "next/image";
+import Document, { Html, Head, Main, NextScript } from 'next/document';
 
 
 const Weather = ({data}) => {
     console.log(data);
     return ( 
     
-    
+    <>
+    <Head>
+          <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests" />
+        </Head>
+   
     <div className="flex flex-col justify-between  w-full h-[65vh]  p-4 text-gray-300">
         <div className="flex justify-between mt-5">
             <div className="flex flex-col items-center">
@@ -42,6 +47,7 @@ const Weather = ({data}) => {
 
 
     </div>
+    </>
      );
 }
  

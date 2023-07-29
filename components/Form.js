@@ -1,6 +1,7 @@
 "use client"
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
+import Document, { Html, Head, Main, NextScript } from 'next/document';
 
 
 
@@ -34,7 +35,15 @@ const Form = () => {
 
     
 
-    return ( <div className=''>
+    return ( 
+    <>
+      <Head>
+          <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests" />
+        </Head>
+    
+   
+    
+    <div className=''>
     
     
     <div class="flex items-center min-h-screen bg-gray-100 dark:bg-gray-900">
@@ -103,7 +112,8 @@ const Form = () => {
       </div>
     </div>
         
-  </div> );
+  </div>
+  </> );
 }
  
 export default Form;

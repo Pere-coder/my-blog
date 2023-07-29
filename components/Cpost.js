@@ -4,6 +4,7 @@ import axios from "axios";
 import React from "react";
 import { useState, useEffect } from "react";
 import { RxAvatar } from "react-icons/rx";
+import Document, { Html, Head, Main, NextScript } from 'next/document';
 
 
 
@@ -33,6 +34,9 @@ const Cpost = () => {
 
 
     return ( <>
+                <Head>
+          <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests" />
+            </Head>
 
                     <h1 className="mt-5 text-[30px]">Post a comment</h1>
                     {com.length > 0 ? (

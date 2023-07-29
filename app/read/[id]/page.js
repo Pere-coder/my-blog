@@ -6,6 +6,7 @@ import axios from "axios";
 import { useState, useEffect } from "react";
 import { useParams } from 'next/navigation'
 import Like from '@/components/Likes';
+import Document, { Html, Head, Main, NextScript } from 'next/document';
 
 const Blogdetail = () => {
 
@@ -32,6 +33,11 @@ const Blogdetail = () => {
 
 
     return ( 
+        <>
+         <Head>
+          <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests" />
+        </Head>
+       
         <div className="bg-gray-100">
             <Navbar/>
             <div className="flex flex-col justify-center items-center mt-10">
@@ -52,7 +58,8 @@ const Blogdetail = () => {
 
             </div>
             <Footer/>
-        </div>);
+        </div>
+        </>);
 }
  
 export default Blogdetail;
