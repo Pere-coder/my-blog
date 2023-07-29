@@ -40,7 +40,7 @@ const Form = () => {
     <div class="flex items-center min-h-screen bg-gray-100 dark:bg-gray-900">
 
       <div class="container mx-auto">
-        <div class="max-w-xl mx-auto my-10 bg-white p-5 rounded-md shadow-sm">
+        <div class="max-w-xl mx-auto my-10 bg-white p-5 rounded-md shadow-2xl">
           <div class="text-center">
           {successMessage && <div className='flex  justify-center items-center text-green-500'>{successMessage}</div>}
             <h1 class="my-3 text-3xl font-semibold text-gray-700 dark:text-gray-200">
@@ -82,7 +82,7 @@ const Form = () => {
               </div>
 
               <div class="mb-6">
-                <label for="message" class="block mb-2 text-sm text-gray-600 dark:text-gray-400">Blog/Article Image</label>
+                <label for="image" class="block mb-2 text-sm text-gray-600 dark:text-gray-400">Blog/Article Image</label>
                 <input onChange={handleChange} type="file" name="image" required class="text-gray-300  w-full px-3 py-2 placeholder-gray-300 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300 dark:bg-gray-700 dark:text-white dark:placeholder-gray-500 dark:border-gray-600 dark:focus:ring-gray-900 dark:focus:border-gray-500" />
               </div>
 

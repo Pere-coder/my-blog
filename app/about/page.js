@@ -6,9 +6,9 @@ const about = () => {
 
                 <Navbar/>
                 <div className="mr-20 ml-20 ">
-                    <div className="flex flex-col justify-center items-center text-center mt-20 border border-gray-300 rounded-md p-5 text-black leading-[30px]">
+                    <div className="flex flex-col justify-center items-center text-center mt-20 border bg-white shadow-2xl rounded-md p-5 text-black leading-[30px]">
                     <h1 className="text-[40px] ">About Us</h1>
-                        <p className="mt-5">Venworld Global is a renowned software engineering and media solutions company thriving to take your business setups to the next development phase!
+                        <p className="mt-5">Gixblog is a renowned software engineering and media solutions company thriving to take your business setups to the next development phase!
 
                             We assure you that our well-planned services will bring your brand to the limelight. Our team of professionals combine experienced advanced tools to develop the best web development projects, programming projects, mobile application, data management projects, high-level desktop applications, user interface, branding, media services and other digital solutions that never existed in the digital, software and media industry with a knack for excellence in the software and media solutions in Africa continent. 
 

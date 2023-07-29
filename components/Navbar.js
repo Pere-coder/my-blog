@@ -179,7 +179,7 @@ const klick = () => {
                             </button>
                         </div>
                         </Transition.Child>
-                        <div className="flex h-full flex-col overflow-y-scroll bg-white py-6 shadow-xl">
+                        <div className="flex h-full flex-col overflow-y-scroll bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 text-white py-6 shadow-xl">
                         <div className="px-4 sm:px-6">
                            
                         </div>
@@ -187,12 +187,12 @@ const klick = () => {
                             <ul className="flex flex-col gap-10 justify-center items-center ">
                             <div className=" text-[50px]">Gixblog </div>
 
-                            <div className="flex flex-col justify-center items-center gap-10 mt-20 ">
-                                <Link href='/' className="cursor-pointer">Home</Link>
-                                <Link href='' className="cursor-pointer">Breaking news</Link>
-                                <Link href="" className="cursor-pointer">Categories</Link>
-                                <Link href="/about" className="cursor-pointer">Who we are</Link>
-                                <Link href="/submit" className="cursor-pointer">Submit an article</Link>
+                            <div className="flex flex-col justify-center items-center gap-7 mt-20 text-[25px]">
+                                <Link href='/' className="cursor-pointer hover:border-r-2 hover:border-l-2 border-white p-5">Home</Link>
+                                <Link href='' className="cursor-pointer hover:border-r-2 hover:border-l-2 border-white p-5">Breaking news</Link>
+                                <Link href="" className="cursor-pointer hover:border-r-2 hover:border-l-2 border-white p-5">Categories</Link>
+                                <Link href="/about" className="cursor-pointer hover:border-r-2 hover:border-l-2 border-white p-5">Who we are</Link>
+                                <Link href="/submit" className="cursor-pointer hover:border-r-2 hover:border-l-2 border-white p-5">Submit an article</Link>
                             </div>
                                 
 

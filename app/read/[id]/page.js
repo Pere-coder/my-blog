@@ -1,17 +1,20 @@
 "use client"
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import Comment from "@/components/Comment";
 import axios from "axios";
 import { useState, useEffect } from "react";
 import { useParams } from 'next/navigation'
+import Like from '@/components/Likes';
 
 const Blogdetail = () => {
 
     const {id} = useParams()
     const [data, setData] = useState(null)
-
+   
     
 
+   
 
     useEffect (() => {
         axios.get(`http://127.0.0.1:8000/blog/${id}`)
@@ -22,22 +25,30 @@ const Blogdetail = () => {
    
 
     if (!data) {
-        return <div> <Navbar/><div className="flex justify-center items-center mt-10">Loading...</div><Footer/></div>;
+        return <div> <Navbar/><div className="flex justify-center items-center mt-10 h-[500px]">Loading...</div><Footer/></div>;
       }
+
+   
+
 
     return ( 
         <div className="bg-gray-100">
             <Navbar/>
             <div className="flex flex-col justify-center items-center mt-10">
-                <div className="bg-white w-[300px]  md:w-[700px] lg:w-[900px] text-black justify-center items-center text-center rounded-md">
+                <div className="shadow-2xl bg-white w-[300px]  md:w-[700px] lg:w-[900px] text-black justify-center items-center text-center rounded-md">
                     <h1 className="text-[50px] font-[400px] mt-5">{data.blogtitle}</h1>
                     <span className="mt-5">By - {data.firstname} {data.lastname}   {data.date}</span>
                     <hr className="mt-3"/>
-                    <div className="w-[200px] h-[100px] md:w-[600px] md:h-[400px] mx-auto flex items-center justify-center mt-10 bg-no-repeat bg-cover" style={{
+                    <div className="w-[200px] h-[100px] md:w-[600px] md:h-[400px] mx-auto flex items-center justify-center mt-10 bg-no-repeat bg-cover bg-center" style={{
                          backgroundImage: `url(${data.image})`,
                     }}></div>
                     <p className="mt-7 text-[10px] md:text-[20px] p-5 ">{data.blog}</p>
+                    <Like/>
+
+                    <Comment/>
+                   
                 </div>
+              
 
             </div>
             <Footer/>
