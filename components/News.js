@@ -8,7 +8,7 @@ const News = () => {
 
 
     const fetch = () => {
-        axios.get('http://127.0.0.1:8000/news/')
+        axios.get('http://perecentuari.pythonanywhere.com/news/')
         .then((response) =>  {(response.data)
         console.log(data)
         dataUpdate(response.data)})

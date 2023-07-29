@@ -13,7 +13,7 @@ const Cpost = () => {
 
     
     const getData = async () => {
-        axios.get('http://127.0.0.1:8000/comment/')
+        axios.get('http://perecentuari.pythonanywhere.com/comment/')
         .then((info) =>{
             setCom(info.data)
             console.log(info.data);

@@ -17,7 +17,7 @@ const Blogdetail = () => {
    
 
     useEffect (() => {
-        axios.get(`http://127.0.0.1:8000/blog/${id}`)
+        axios.get(`http://perecentuari.pythonanywhere.com/blog/${id}`)
         .then(response => {console.log(response.data)
             setData(response.data)})
         .catch(error => {console.log('Error', error)})   
