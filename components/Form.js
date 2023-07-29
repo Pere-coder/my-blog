@@ -65,13 +65,11 @@ const Form = () => {
           <div class="text-center">
           {successMessage && <div className='flex  justify-center items-center text-green-500'>{successMessage}</div>}
             <h1 class="my-3 text-3xl font-semibold text-black dark:text-gray-200 font-custom">
-              Blog/Article Post
+              Submit Blog/Article
             </h1>
-            <p class="text-gray-400 dark:text-gray-400">
-              Submit an article.
-            </p>
+           
           </div>
-          <div class="">
+          <div class="mt-5">
             <form  method="POST" id="form" >
             
               <div class="flex mb-6 space-x-4">

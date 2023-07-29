@@ -11,6 +11,15 @@ import Link from "next/link";
 
 
 
+
+const scrollToBottom = () => {
+    window.scrollTo({
+      top: document.documentElement.scrollHeight,
+      behavior: "smooth",
+    });
+  };
+
+
 const Navbar = () => {
 
 const [isOpen, setIsOpen] = useState(false);
@@ -123,7 +132,7 @@ const klick = () => {
 
                         </div>
                         <li className="flex justify-center p-2 cursor-pointer hover:border-r-2 hover:border-l-2 border-white" onClick={(e) => {e.preventDefault(); setIsOpen(false)}}><Link href='/submit'>Submit your article</Link></li>
-                        <li className=" flex justify-center p-2  cursor-pointer hover:border-r-2 hover:border-l-2 border-white" onClick={(e) => {e.preventDefault(); setIsOpen(false)}}>Follow us</li>
+                        <li className=" flex justify-center p-2  cursor-pointer hover:border-r-2 hover:border-l-2 border-white" onClick={scrollToBottom}>Follow us</li>
                     </ul>
 
                     
