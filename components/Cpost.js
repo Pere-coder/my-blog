@@ -39,7 +39,7 @@ const Cpost = () => {
                         <div className="p-5">
                            
                             {com.map((item) => 
-                            <div className="bg-white w-full flex flex-col justify-center items-start p-5 shadow-xl rounded-md h-[100px] mt-5"> <span className='flex gap-5'><div className='text-blue-500'><RxAvatar size={30}/></div> <div className='mt-1'>Demo user</div></span><div className='mt-5'>{item.comment}</div></div>
+                            <div className="bg-white w-full flex flex-col justify-center items-start p-5 shadow-xl rounded-md h-[100px] mt-5" key={item.id}> <span className='flex gap-5'><div className='text-blue-500'><RxAvatar size={30}/></div> <div className='mt-1'>Demo user</div></span><div className='mt-5'>{item.comment}</div></div>
                             )}
                         </div>
                         ): 
