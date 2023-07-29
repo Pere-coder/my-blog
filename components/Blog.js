@@ -62,7 +62,7 @@ const Blog = () => {
                 <Link key={blog.id} href={`/read/${blog.id}`}  className="cursor-pointer">
                 <div
                   
-                  className="shadow-2xl hover:scale-105 ease-in-out duration-300   bg-no-repeat bg-cover h-[300px] w-[300px] text-white  items-start text-start rounded-md"
+                  className="shadow-2xl hover:scale-105 ease-in-out duration-300   bg-no-repeat bg-cover bg-center h-[300px] w-[300px] text-white  items-start text-start rounded-md"
                   style={{
                     backgroundImage: `url(${blog.image})`,
                   }}
