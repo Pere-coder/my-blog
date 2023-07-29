@@ -66,7 +66,7 @@ const Blog = () => {
                     backgroundImage: `url(${blog.image})`,
                   }}
                 >
-                  <div className="flex flex-col p-5"> <h1 className="flex mt-[200px]  text-[15px] md:text-[15px] ">{blog.blogtitle}</h1>
+                  <div className="flex flex-col p-5"> <h1 className="flex mt-[200px]  text-[15px] md:text-[15px] "  key={blog.id}>{blog.blogtitle}</h1>
                     <span className=" text-[5px] md:text-[10px] text-gray-100 mt-2">
                       By - <span className="bg-blue-500 p-2 rounded-md">{blog.firstname}</span> {blog.date}
                     </span>
