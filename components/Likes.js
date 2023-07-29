@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { AiFillLike } from "react-icons/Ai";
+import { AiFillLike } from "react-icons/ai";
 
 const Like = () => {
   const [likes, setLikes] = useState(0);
