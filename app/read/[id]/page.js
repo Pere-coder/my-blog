@@ -39,10 +39,10 @@ const Blogdetail = () => {
             <Navbar/>
             <div className="flex flex-col justify-center items-center mt-10">
                 <div className="shadow-2xl bg-white w-[300px]  md:w-[700px] lg:w-[900px] text-black justify-center items-center text-center rounded-md">
-                    <h1 className="text-[50px]  mt-5 font-bold font-custom">{data.blogtitle}</h1>
+                    <h1 className="text-[30px] md:text-[50px]  mt-5 font-bold font-custom">{data.blogtitle}</h1>
                     <span className="mt-5">By - {data.firstname} {data.lastname}   {data.date}</span>
                     <hr className="mt-3"/>
-                    <div className="w-[200px] h-[100px] md:w-[600px] md:h-[400px] mx-auto flex items-center justify-center mt-10 bg-no-repeat bg-cover bg-center" style={{
+                    <div className="w-[250px] h-[100px] md:w-[600px] md:h-[400px] mx-auto flex items-center justify-center mt-10 bg-no-repeat bg-cover bg-center" style={{
                          backgroundImage: `url(${data.image})`,
                     }}></div>
                     <p className="mt-7 text-[10px] md:text-[20px] p-5 ">{data.blog}</p>
