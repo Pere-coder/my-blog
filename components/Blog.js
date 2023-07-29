@@ -58,9 +58,9 @@ const Blog = () => {
           {data.length > 0 ? (
             <div className="flex flex-wrap justify-center mt-10 md:w-[720px] gap-4 ">
               {data.map((blog) => (
-                <Link  href={`/read/${blog.id}`}  className="cursor-pointer" key={blog.id}>
+                <Link  href={`/read/${blog.id}`}  className="cursor-pointer">
                 <div
-                  
+                  key={blog.id}
                   className="shadow-2xl hover:scale-105 ease-in-out duration-300   bg-no-repeat bg-cover h-[300px] w-[300px] text-white  items-start text-start rounded-md"
                   style={{
                     backgroundImage: `url(${blog.image})`,
