@@ -17,7 +17,25 @@ const Form = () => {
 
     const postForm = (event) => {
         event.preventDefault();
-        axios.post('https://perecentuari.pythonanywhere.com/blog/', formData)
+        const form = new FormData();
+
+
+         // Add text fields to the form data
+      for (const key in formData) {
+      form.append(key, formData[key]);
+     }
+
+    // Append the image to the form data
+     const imageInput = document.querySelector('input[name="image"]');
+      if (imageInput.files && imageInput.files[0]) {
+      form.append('image', imageInput.files[0]);
+      }
+        axios.post('https://perecentuari.pythonanywhere.com/blog/', form , {
+          headers: {
+            'Content-Type': 'multipart/form-data', // Important to set the content type correctly
+          },
+        })
+       
         .then(response => {
         console.log(response.data);
         setSuccessMessage('your Blog/Article has been succesfully submitted')
