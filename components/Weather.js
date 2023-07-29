@@ -1,6 +1,5 @@
 import React from "react";
 import Image from "next/image";
-import Document, { Html, Head, Main, NextScript } from 'next/document';
 
 
 

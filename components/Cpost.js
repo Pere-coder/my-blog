@@ -4,7 +4,6 @@ import axios from "axios";
 import React from "react";
 import { useState, useEffect } from "react";
 import { RxAvatar } from "react-icons/rx";
-import Document, { Html, Head, Main, NextScript } from 'next/document';
 
 
 

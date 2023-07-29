@@ -5,7 +5,6 @@ import axios from "axios";
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import News from "./News";
-import Document, { Html, Head, Main, NextScript } from 'next/document';
 
 
 const Blog = () => {

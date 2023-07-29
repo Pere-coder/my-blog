@@ -1,7 +1,6 @@
 "use client"
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import Document, { Html, Head, Main, NextScript } from 'next/document';
 
 
 

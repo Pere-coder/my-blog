@@ -2,7 +2,7 @@ import Email from "./Email";
 import React from "react";
 import ReactDOM from 'react-dom'
 import { FaBeer } from "react-icons/fa";
-import Document, { Html, Head, Main, NextScript } from 'next/document';
+
 import { AiFillFacebook, AiFillTwitterSquare, AiOutlineInstagram, AiOutlineWhatsApp } from "react-icons/ai";
 // import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 // import { faTwitter, faEnvelope} from '@fortawesome/free-solid-svg-icons'
