@@ -3,6 +3,7 @@ import Image from "next/image";
 import Document, { Html, Head, Main, NextScript } from 'next/document';
 
 
+
 const Weather = ({data}) => {
     console.log(data);
     return ( 

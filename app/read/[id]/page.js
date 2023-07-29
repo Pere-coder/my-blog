@@ -8,6 +8,7 @@ import { useParams } from 'next/navigation'
 import Like from '@/components/Likes';
 import Document, { Html, Head, Main, NextScript } from 'next/document';
 
+
 const Blogdetail = () => {
 
     const {id} = useParams()

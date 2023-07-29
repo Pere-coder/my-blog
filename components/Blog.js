@@ -7,6 +7,7 @@ import Link from "next/link";
 import News from "./News";
 import Document, { Html, Head, Main, NextScript } from 'next/document';
 
+
 const Blog = () => {
   const [data, setData] = useState([]);
   const [searchQuery, setSearchQuery] = useState("");
