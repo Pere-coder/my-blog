@@ -47,16 +47,16 @@ const klick = () => {
     return ( <div className="flex flex-col justify-center" >
         
                 <nav className="flex  items-center text-center w-full justify-between  h-[50px] p-5">
-                    <div className="text-[20px] md:text-[30px] ">Gixblog</div>
+                    <div className="text-[20px] md:text-[30px] font-custom font-bold">Gixblog</div>
                     <ul className="hidden md:flex text-center justify-center gap-5 font-[500px]">
                         <h1>Your one stop news and blog platform.....</h1>  
                     </ul>
-                    <div className="flex gap-2 p-2 justify-start items-center"><input  type='text' className=' w-[200px] bg-white  placeholder-gray-300 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300' /><BsSearch className='cursor-pointer'  size={20}/></div>
+                  
                 </nav>
 
                 <nav className="flex flex-col items-center justify-center p-5 h-[120px] bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 text-white ">
                     <div className="flex w-full justify-between">
-                        <h1 className="text-[40px]  md:text-[40px]">Blogs/News</h1>
+                        <h1 className="text-[40px]  md:text-[40px] font-custom font-bold">Blogs/News</h1>
                         <div className="flex justify-center items-center cursor-pointer md:hidden " onClick={btn}><FaBars size={30}/></div>
                     </div>
                     <ul className="hidden  md:flex items-start justify-center mx-auto gap-4 mt-5">
@@ -185,7 +185,7 @@ const klick = () => {
                         </div>
                         <div className="relative mt-6 flex-1 px-4 sm:px-6  ">
                             <ul className="flex flex-col gap-10 justify-center items-center ">
-                            <div className=" text-[50px]">Gixblog </div>
+                            <div className="font-bold font-custom text-[50px]">Gixblog </div>
 
                             <div className="flex flex-col justify-center items-center gap-7 mt-20 text-[25px]">
                                 <Link href='/' className="cursor-pointer hover:border-r-2 hover:border-l-2 border-white p-5">Home</Link>

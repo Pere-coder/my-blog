@@ -7,6 +7,16 @@ module.exports = {
   ],
   theme: {
     extend: {
+      
+      fontFamily: {
+        custom: ['Poppins', 'system-ui', 'sans-serif'],
+        bison: ['Bison', 'system-ui', 'sans-serif'],
+        roboto: ['Roboto', 'system-ui', 'sans-serif'],
+        jost: ['Jost', 'system-ui', 'sans-serif'],
+        helvetica: ['Helvetica Neue', 'system-ui', 'sans-serif'],
+        sans: ['Open Sans', 'system-ui', 'sans-serif'],
+  
+      },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic':

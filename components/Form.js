@@ -64,7 +64,7 @@ const Form = () => {
         <div class="max-w-xl mx-auto my-10 bg-white p-5 rounded-md shadow-2xl">
           <div class="text-center">
           {successMessage && <div className='flex  justify-center items-center text-green-500'>{successMessage}</div>}
-            <h1 class="my-3 text-3xl font-semibold text-gray-700 dark:text-gray-200">
+            <h1 class="my-3 text-3xl font-semibold text-black dark:text-gray-200 font-custom">
               Blog/Article Post
             </h1>
             <p class="text-gray-400 dark:text-gray-400">

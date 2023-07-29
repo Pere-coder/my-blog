@@ -29,7 +29,7 @@ const News = () => {
     return (
       
         <div className='mt-10 bg-white rounded-md w-[300px] p-5'>
-          <div className='flex justify-center text-[30px] mt-10'>Breaking news</div>
+          <div className='flex justify-center text-[30px] mt-10 font-bold font-custom'>Breaking news</div>
             {data.length > 0 ? (
           <div className='flex flex-col justify-center items-center'>
             {data.map((news) => 

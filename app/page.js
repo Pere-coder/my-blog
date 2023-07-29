@@ -3,6 +3,8 @@ import Footer from '@/components/Footer'
 import Blog from '@/components/Blog'
 import Image from 'next/image'
 import Weatherdisplay from '@/components/Weatherdisplay'
+import { Inter } from 'next/font/google'
+
 
 
 export default function Home() {

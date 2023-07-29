@@ -5,6 +5,7 @@ import axios from "axios";
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import News from "./News";
+import { Inter } from 'next/font/google'
 
 const Blog = () => {
   const [data, setData] = useState([]);
@@ -44,7 +45,7 @@ const Blog = () => {
     <div className="flex flex-wrap gap-10 justify-center">
       <div>
         <div className="flex flex-col justify-center items-center bg-white mt-10 rounded-md p-5">
-          <div className="flex justify-center items-center mt-10 text-[40px]">
+          <div className="flex justify-center items-center mt-10 text-[40px] font-bold font-custom">
             Blogs & Articles
           </div>
           <input
@@ -66,7 +67,7 @@ const Blog = () => {
                     backgroundImage: `url(${blog.image})`,
                   }}
                 >
-                  <div className="flex flex-col p-5"> <h1 className="flex mt-[150px]  text-[15px] md:text-[15px] " >{blog.blogtitle}</h1>
+                  <div className="flex flex-col p-5"> <h1 className="flex mt-[150px]  text-[15px] md:text-[15px] font-bold font-custom" >{blog.blogtitle}</h1>
                     <span className=" text-[5px] md:text-[10px] text-gray-100 mt-2">
                       By - <span className="bg-blue-500 p-2 rounded-md">{blog.firstname}</span> {blog.date}
                     </span>
