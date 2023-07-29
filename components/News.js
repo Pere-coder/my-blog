@@ -3,7 +3,6 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 
 
-
 const News = () => {
     const [data, dataUpdate] = useState([])
 
@@ -28,10 +27,7 @@ const News = () => {
 
 
     return (
-      <>
-      <Head>
-          <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests" />
-        </Head>
+      
         <div className='mt-10 bg-white rounded-md w-[300px] p-5'>
             {data.length > 0 ? (
           <div className='flex flex-col justify-center items-center'>
@@ -52,7 +48,6 @@ const News = () => {
           </div>
           ): <div  className='shadow-2xl hover:scale-105 ease-in-out duration-300 text-black flex justify-center items-center p-5'>Loading...</div>}
           </div>
-          </>
 
     )}
  

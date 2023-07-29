@@ -6,7 +6,6 @@ import { useState, useEffect } from "react";
 import Link from "next/link";
 import News from "./News";
 
-
 const Blog = () => {
   const [data, setData] = useState([]);
   const [searchQuery, setSearchQuery] = useState("");
@@ -42,11 +41,6 @@ const Blog = () => {
   };
 
   return (
-    <>
-      <Head>
-          <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests" />
-        </Head>
-    
     <div className="flex flex-wrap gap-10 justify-center">
       <div>
         <div className="flex flex-col justify-center items-center bg-white mt-10 rounded-md p-5">
@@ -92,7 +86,6 @@ const Blog = () => {
       </div>
     <News/>
    </div>
-   </>
   );
 };
 

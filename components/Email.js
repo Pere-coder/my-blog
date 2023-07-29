@@ -3,7 +3,6 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 
 
-
 const Email = () => {
 
     const [formData, setFormData] = useState({});
@@ -31,11 +30,8 @@ const Email = () => {
   
 
 
-    return ( 
-    <>
-        <Head>
-          <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests" />
-        </Head> 
+    return ( <>
+         
         <form className="flex flex-col justify-center items-center" method='POST'>
         {successMessage && <div className='flex mt-5 justify-center items-center text-green-500'>{successMessage}</div>}
             <div className="mt-5 text-white flex justify-center text-center text-[15px] md:text-[30px]">Suscribe to our news letter</div>

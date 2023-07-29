@@ -7,7 +7,6 @@ import { useState, useEffect } from "react";
 import { useParams } from 'next/navigation'
 import Like from '@/components/Likes';
 
-
 const Blogdetail = () => {
 
     const {id} = useParams()
@@ -34,9 +33,7 @@ const Blogdetail = () => {
 
     return ( 
         <>
-         <Head>
-          <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests" />
-        </Head>
+        
        
         <div className="bg-gray-100">
             <Navbar/>

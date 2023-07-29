@@ -5,7 +5,6 @@ import { useState, useEffect } from "react";
 import { useParams } from 'next/navigation'
 
 
-
 const Comment = () => {
     const [formData, setFormData] = useState({});
    
@@ -32,9 +31,6 @@ const Comment = () => {
     return ( 
     
         <>
-        <Head>
-          <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests" />
-        </Head>
          <hr className="mt-3"/>
                     <div className="flex flex-col ">
                         <Cpost/>

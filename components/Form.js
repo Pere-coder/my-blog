@@ -5,7 +5,6 @@ import axios from 'axios';
 
 
 
-
 const Form = () => {
 
     const [formData, setFormData] = useState({});
@@ -36,12 +35,7 @@ const Form = () => {
     
 
     return ( 
-    <>
-      <Head>
-          <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests" />
-        </Head>
     
-   
     
     <div className=''>
     
@@ -112,8 +106,7 @@ const Form = () => {
       </div>
     </div>
         
-  </div>
-  </> );
+  </div> );
 }
  
 export default Form;
