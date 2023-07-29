@@ -1,6 +1,7 @@
 "use client"
 import { data } from "autoprefixer";
 import axios from "axios";
+import React from "react";
 import { useState, useEffect } from "react";
 import { RxAvatar } from "react-icons/Rx";
 

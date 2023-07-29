@@ -1,5 +1,6 @@
 "use client"
 import Image from 'next/image'
+import React from "react";
 import { Inter } from 'next/font/google'
 import axios from 'axios'
 import { useState } from 'react'

@@ -1,6 +1,7 @@
 "use client"
 import React from 'react'
 import {BsSearch, } from 'react-icons/bs'
+import React from "react";
 import { ImWarning } from "react-icons/im";
 import {FaBars} from "react-icons/fa"
 import { Fragment, useState } from 'react'

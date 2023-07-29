@@ -1,4 +1,5 @@
 import Email from "./Email";
+import React from "react";
 import ReactDOM from 'react-dom'
 import { FaBeer } from "react-icons/fa";
 import { AiFillFacebook, AiFillTwitterSquare, AiOutlineInstagram, AiOutlineWhatsApp } from "react-icons/ai";
