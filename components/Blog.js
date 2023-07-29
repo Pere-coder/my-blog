@@ -16,7 +16,7 @@ const Blog = () => {
   }
 
   const fetchData = (searchQuery) => {
-    let url = "http://perecentuari.pythonanywhere.com/blog/";
+    let url = "https://perecentuari.pythonanywhere.com/blog/";
     if (searchQuery) {
       url += `?search=${encodeURIComponent(searchQuery)}`;
     }

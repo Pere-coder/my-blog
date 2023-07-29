@@ -17,7 +17,7 @@ const Form = () => {
 
     const postForm = (event) => {
         event.preventDefault();
-        axios.post('http://perecentuari.pythonanywhere.com/blog/', formData)
+        axios.post('https://perecentuari.pythonanywhere.com/blog/', formData)
         .then(response => {
         console.log(response.data);
         setSuccessMessage('your Blog/Article has been succesfully submitted')

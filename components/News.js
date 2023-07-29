@@ -8,7 +8,7 @@ const News = () => {
 
 
     const fetch = () => {
-        axios.get('http://perecentuari.pythonanywhere.com/news/')
+        axios.get('https://perecentuari.pythonanywhere.com/news/')
         .then((response) =>  {(response.data)
         console.log(data)
         dataUpdate(response.data)})

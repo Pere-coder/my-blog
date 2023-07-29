@@ -15,7 +15,7 @@ const Email = () => {
     const postData = async (event) => {
         event.preventDefault();
         try {
-            const response = await axios.post('http://perecentuari.pythonanywhere.com/', formData);
+            const response = await axios.post('https://perecentuari.pythonanywhere.com/', formData);
             console.log(response.data);
             setSuccessMessage('your Email has been succesfully submitted')
             setFormData({'formData': null})

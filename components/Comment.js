@@ -17,7 +17,7 @@ const Comment = () => {
       const comment = async (event) => {
         // event.preventDefault();
         try {
-            const res = await axios.post('http://perecentuari.pythonanywhere.com/comment/', formData);
+            const res = await axios.post('https://perecentuari.pythonanywhere.com/comment/', formData);
             console.log(res.data);
             setFormData({'formData': null})
         }catch (error){
