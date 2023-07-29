@@ -29,6 +29,7 @@ const News = () => {
     return (
       
         <div className='mt-10 bg-white rounded-md w-[300px] p-5'>
+          <div className='flex justify-center text-[30px] mt-10'>Breaking news</div>
             {data.length > 0 ? (
           <div className='flex flex-col justify-center items-center'>
             {data.map((news) => 
@@ -46,7 +47,7 @@ const News = () => {
             )}
 
           </div>
-          ): <div  className='shadow-2xl hover:scale-105 ease-in-out duration-300 text-black flex justify-center items-center p-5'>Loading...</div>}
+          ): <div  className='shadow-2xl hover:scale-105 ease-in-out duration-300 text-black flex justify-center items-center p-5 rounded-md'>Loading...</div>}
           </div>
 
     )}
