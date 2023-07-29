@@ -79,7 +79,7 @@ const Blog = () => {
             </div>
           ) : (
             <div className="shadow-xl w-[300px] md:w-[400px] h-[400px] text-black  flex justify-center items-center text-center mt-10 rounded-md">
-              No blogs posted
+             No blogs posted
             </div>
           )}
         </div>
