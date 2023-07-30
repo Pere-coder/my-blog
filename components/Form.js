@@ -60,7 +60,7 @@ const Form = () => {
     
     <div class="flex items-center min-h-screen bg-gray-100 ">
 
-      <div class="container mx-auto">
+      <div class="container mx-auto p-5">
         <div class="max-w-xl mx-auto my-10 bg-white p-5 rounded-md shadow-2xl">
           <div class="text-center">
           {successMessage && <div className='flex  justify-center items-center text-green-500 font-roboto'>{successMessage}</div>}
