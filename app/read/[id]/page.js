@@ -42,7 +42,7 @@ const Blogdetail = () => {
                     <h1 className="text-[30px] md:text-[50px]  mt-5 font-bold font-custom">{data.blogtitle}</h1>
                     <span className="mt-5">By - {data.firstname} {data.lastname}   {data.date}</span>
                     <hr className="mt-3"/>
-                    <div className="w-[250px] h-[100px] md:w-[600px] md:h-[400px] mx-auto flex items-center justify-center mt-10 bg-no-repeat bg-cover bg-center" style={{
+                    <div className="w-[250px] h-[100px] md:w-[600px] md:h-[400px] mx-auto flex items-center justify-center mt-10 bg-no-repeat bg-cover bg-center rounded-md" style={{
                          backgroundImage: `url(${data.image})`,
                     }}></div>
                     <p className="mt-7 text-[10px] md:text-[20px] p-5 ">{data.blog}</p>
