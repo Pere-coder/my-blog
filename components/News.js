@@ -33,7 +33,7 @@ const News = () => {
             {data.length > 0 ? (
           <div className='flex flex-col justify-center items-center'>
             {data.map((news) => 
-            <div key={news.id} className='p-5 shadow-2xl hover:scale-105 ease-in-out duration-300   bg-no-repeat bg-cover bg-center  w-[250px] text-white  items-start text-start rounded-md mt-5'
+            <div key={news.id} className= ' font-roboto p-5 shadow-2xl hover:scale-105 ease-in-out duration-300   bg-no-repeat bg-cover bg-center  w-[250px] text-white  items-start text-start rounded-md mt-5'
              style={{
                 backgroundImage: `url(${news.image})`,
               }}>

@@ -68,8 +68,8 @@ const Blog = () => {
                   }}
                 >
                   <div className="flex flex-col p-5"> <h1 className="flex mt-[150px]  text-[15px] md:text-[15px] font-bold font-custom shadow-2xl" >{blog.blogtitle}</h1>
-                    <span className=" text-[5px] md:text-[10px] text-gray-100 mt-2">
-                      By - <span className="bg-blue-500 p-2 rounded-md">{blog.firstname}</span> {blog.date}
+                    <span className=" text-[5px] md:text-[10px] text-gray-100 mt-2 font-roboto">
+                      By - <span className="bg-blue-500 p-2 rounded-md font-roboto">{blog.firstname}</span> {blog.date}
                     </span>
                 </div>
                   
@@ -79,7 +79,7 @@ const Blog = () => {
               ))}
             </div>
           ) : (
-            <div className="shadow-xl w-[300px] md:w-[400px] h-[400px] text-black  flex justify-center items-center text-center mt-10 rounded-md">
+            <div className="shadow-xl w-[300px] md:w-[400px] h-[400px] text-black  flex justify-center items-center text-center mt-10 rounded-md font-roboto">
              No blogs posted
             </div>
           )}

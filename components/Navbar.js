@@ -7,6 +7,7 @@ import { Fragment, useState } from 'react'
 import { Dialog, Transition } from '@headlessui/react'
 import { XMarkIcon, Bars3BottomRightIcon } from '@heroicons/react/24/outline'
 import Link from "next/link";
+import { FiChevronDown } from "react-icons/fi";
 
 
 
@@ -69,12 +70,12 @@ const klick = () => {
                         <div className="flex justify-center items-center cursor-pointer md:hidden " onClick={btn}><FaBars size={30}/></div>
                     </div>
                     <ul className="hidden  md:flex items-start justify-center mx-auto gap-4 mt-5">
-                        <li className=" flex justify-center mx-auto p-2 cursor-pointer hover:border-r-2 hover:border-l-2 border-white" onClick={(e) => {e.preventDefault(); setIsOpen(false)}}><Link href='/'>Home</Link></li>
+                        <li className=" flex justify-center mx-auto p-2 cursor-pointer hover:border-r-2 hover:border-l-2 border-white font-roboto" onClick={(e) => {e.preventDefault(); setIsOpen(false)}}><Link href='/'>Home</Link></li>
     
                         <div>
-                            <li className="flex justify-center items-center text-center p-2 cursor-pointer mx-auto hover:border-r-2 hover:border-l-2 border-white"  onClick={toggleDropdown}>Categories</li>
+                            <li className="flex justify-center items-center text-center p-2 cursor-pointer mx-auto hover:border-r-2 hover:border-l-2 border-white font-roboto"  onClick={toggleDropdown}>Categories <FiChevronDown size={20}/></li>
                             {isOpen && (
-                                <ul className="absolute mx-0 flex flex-col justify-center w-[120px]  bg-white   shadow-lg text-sm">
+                                <ul className="absolute mx-0 flex flex-col justify-center w-[120px]  bg-white   shadow-lg text-sm font-roboto">
                                 
                                     <li>
                                         <a href="#" onClick={(e) => {e.preventDefault(); setIsOpen(false)}} className="flex justify-center text-gray-800 hover:bg-gray-200">
@@ -107,9 +108,9 @@ const klick = () => {
                                 </ul> )}
                          </div>
                         <div>
-                            <li className="flex justify-center p-2 cursor-pointer hover:border-r-2 hover:border-l-2 border-white" onClick={tDropdown}>Who we are</li>
+                            <li className="flex justify-center p-2 cursor-pointer hover:border-r-2 hover:border-l-2 border-white font-roboto" onClick={tDropdown}>Who we are<FiChevronDown className='mt-1' size={20}/></li>
                             {Open && (
-                                <ul className="absolute mx-0 flex flex-col justify-center w-[100px]  bg-white border  shadow-lg text-sm">
+                                <ul className="absolute mx-0 flex flex-col justify-center w-[100px]  bg-white border  shadow-lg text-sm font-roboto">
                                 
                                     <li>
                                         <Link href="/about"  className="flex justify-center text-gray-800 hover:bg-gray-200">
@@ -131,8 +132,8 @@ const klick = () => {
                                 </ul> )}
 
                         </div>
-                        <li className="flex justify-center p-2 cursor-pointer hover:border-r-2 hover:border-l-2 border-white" onClick={(e) => {e.preventDefault(); setIsOpen(false)}}><Link href='/submit'>Submit your article</Link></li>
-                        <li className=" flex justify-center p-2  cursor-pointer hover:border-r-2 hover:border-l-2 border-white" onClick={scrollToBottom}>Follow us</li>
+                        <li className="flex justify-center p-2 cursor-pointer hover:border-r-2 hover:border-l-2 border-white font-roboto" onClick={(e) => {e.preventDefault(); setIsOpen(false)}}><Link href='/submit'>Submit your article</Link></li>
+                        <li className=" flex justify-center p-2  cursor-pointer hover:border-r-2 hover:border-l-2 border-white font-roboto" onClick={scrollToBottom}>Follow us</li>
                     </ul>
 
                     
@@ -196,7 +197,7 @@ const klick = () => {
                             <ul className="flex flex-col gap-10 justify-center items-center ">
                             <div className="font-bold font-custom text-[50px]">Gixblog </div>
 
-                            <div className="flex flex-col justify-center items-center gap-7 mt-20 text-[25px]">
+                            <div className="flex flex-col justify-center items-center gap-7 mt-20 text-[25px] font-roboto">
                                 <Link href='/' className="cursor-pointer hover:border-r-2 hover:border-l-2 border-white p-5">Home</Link>
                                 <Link href='' className="cursor-pointer hover:border-r-2 hover:border-l-2 border-white p-5">Breaking news</Link>
                                 <Link href="" className="cursor-pointer hover:border-r-2 hover:border-l-2 border-white p-5">Categories</Link>

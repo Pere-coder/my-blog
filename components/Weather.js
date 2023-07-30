@@ -22,7 +22,7 @@ const Weather = ({data}) => {
         {/* bottom */}
 
 
-        <diV className='bg-black/50  p-5 rounded-md mt-2 '>
+        <diV className='bg-black/50  p-5 rounded-md mt-2 font-roboto'>
             <p className="text-[10px] md:text-[20px] text-center pb-6">Weather in {data.name}</p>
             <div className="flex justify-between text-center">
                 <div>
