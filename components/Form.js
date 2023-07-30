@@ -76,39 +76,39 @@ const Form = () => {
                 <div class="w-full md:w-1/2 font-roboto">
                 
                   <label for="fname" class="block mb-2 text-sm text-gray-600 dark:text-gray-400 ">First Name</label>
-                  <input onChange={handleChange} type="text" name="firstname" id="first_name" placeholder="first name" required class="w-full px-3 py-2 placeholder-gray-300 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300 dark:bg-gray-700 dark:text-white dark:placeholder-gray-500 dark:border-gray-600 dark:focus:ring-gray-900 dark:focus:border-gray-500" />
+                  <input onChange={handleChange} type="text" name="firstname" id="first_name" placeholder="first name" required class="w-full px-3 py-2 placeholder-gray-300 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300" />
                 </div>
                 <div class="w-full md:w-1/2 font-roboto">
                   <label for="lname" class="block mb-2 text-sm text-gray-600 dark:text-gray-400">Last Name</label>
-                  <input onChange={handleChange} type="text" name="lastname" id="lname" placeholder="last name" required class="w-full px-3 py-2 placeholder-gray-300 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300 dark:bg-gray-700 dark:text-white dark:placeholder-gray-500 dark:border-gray-600 dark:focus:ring-gray-900 dark:focus:border-gray-500" />
+                  <input onChange={handleChange} type="text" name="lastname" id="lname" placeholder="last name" required class="w-full px-3 py-2 placeholder-gray-300 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300" />
                 </div>
               </div>
 
               <div class="flex mb-6 space-x-4 font-roboto">
                 <div class="w-full md:w-1/2">
                   <label for="email" class="block mb-2 text-sm text-gray-600 dark:text-gray-400">Email Address</label>
-                  <input onChange={handleChange} type="email" name="email" id="email" placeholder="you@gmail.com" required class="w-full px-3 py-2 placeholder-gray-300 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300 dark:bg-gray-700 dark:text-white dark:placeholder-gray-500 dark:border-gray-600 dark:focus:ring-gray-900 dark:focus:border-gray-500" />
+                  <input onChange={handleChange} type="email" name="email" id="email" placeholder="you@gmail.com" required class="w-full px-3 py-2 placeholder-gray-300 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300" />
                 </div>
 
                 <div class="w-full md:w-1/2 font-roboto">
                   <label for="phone" class="block text-sm mb-2 text-gray-600 dark:text-gray-400">Phone Number</label>
-                  <input onChange={handleChange} type="text" name="phone" id="phone" placeholder="+234**********" required class="w-full px-3 py-2 placeholder-gray-300 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300 dark:bg-gray-700 dark:text-white dark:placeholder-gray-500 dark:border-gray-600 dark:focus:ring-gray-900 dark:focus:border-gray-500" />
+                  <input onChange={handleChange} type="text" name="phone" id="phone" placeholder="+234**********" required class="w-full px-3 py-2 placeholder-gray-300 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300" />
                 </div>
               </div>
               <div class="mb-6 font-roboto">
                 <label for="message" class="block mb-2 text-sm text-gray-600 dark:text-gray-400">Blog/Article title</label>
-                <input onChange={handleChange} type="text" name="blogtitle" id="phone" placeholder="blog'article title" required class="w-full px-3 py-2 placeholder-gray-300 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300 dark:bg-gray-700 dark:text-white dark:placeholder-gray-500 dark:border-gray-600 dark:focus:ring-gray-900 dark:focus:border-gray-500" />
+                <input onChange={handleChange} type="text" name="blogtitle" id="phone" placeholder="blog'article title" required class="w-full px-3 py-2 placeholder-gray-300 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300" />
               </div>
 
               <div class="mb-6 font-roboto">
                 <label for="image" class="block mb-2 text-sm text-gray-600 dark:text-gray-400">Blog/Article Image</label>
-                <input onChange={handleChange} type="file" name="image" required class="text-gray-300  w-full px-3 py-2 placeholder-gray-300 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300 dark:bg-gray-700 dark:text-white dark:placeholder-gray-500 dark:border-gray-600 dark:focus:ring-gray-900 dark:focus:border-gray-500" />
+                <input onChange={handleChange} type="file" name="image" required class="text-gray-300  w-full px-3 py-2 placeholder-gray-300 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300" />
               </div>
 
               <div class="mb-6 font-roboto">
                 <label for="message" class="block mb-2 text-sm text-gray-600 dark:text-gray-400">Your Blog/Article</label>
 
-                <textarea onChange={handleChange} rows="5" name="blog" id="message" placeholder="Your Blog/article" required class="w-full px-3 py-2 placeholder-gray-300 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300 dark:bg-gray-700 dark:text-white dark:placeholder-gray-500 dark:border-gray-600 dark:focus:ring-gray-900 dark:focus:border-gray-500" ></textarea>
+                <textarea onChange={handleChange} rows="5" name="blog" id="message" placeholder="Your Blog/article" required class="w-full px-3 py-2 placeholder-gray-300 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300" ></textarea>
               </div>
               <div class="mb-6 font-roboto" >
                 <button onClick={postForm} type="submit" class="w-full px-3 py-4 text-white bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500  rounded-md  focus:outline-none">
